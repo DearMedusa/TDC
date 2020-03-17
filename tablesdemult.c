@@ -25,8 +25,8 @@ int main(){
   
   while(1){
 
-    a = rand();
-    b = rand();
+    a = rand()%10+1;
+    b = rand()%10+1;
     int resultat = a * b;
     printf("Test");
     printf("%d\n",a);
