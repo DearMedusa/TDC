@@ -14,6 +14,8 @@ int main(){
   srand(time(NULL));
   struct sigaction action;
   int i;
+  int a;
+  int b;
   action.sa_handler = handler;
   action.sa_flags = 0;
   sigemptyset(&action.sa_mask);
@@ -21,16 +23,15 @@ int main(){
   sigaction(SIGQUIT,&action,NULL);
   sigaction(SIGTERM, &action, NULL);
 
-  int a = rand();
-  printf("%d\n",a);
-  int b = rand();
-  printf("%d\n",b);
+  
   while(1)
 
-    //for(i = 0; i < 10; i++){
-      //printf("%d\n", a);
-      //scanf("%d", score);
-    //}
+    a = rand();
+    b = rand();
+    int resultat = a * b; 
+    printf("%d\n",a);
+    printf("%d\n",b);
+    printf("Resultat de la multiplication %d\n",resultat);
 
   return 0;
 }
