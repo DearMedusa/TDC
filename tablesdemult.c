@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <signal.h>
+#include <time.h>
 
 int score;
 
@@ -28,7 +29,8 @@ int main(){
 
     a = rand();
     b = rand();
-    int resultat = a * b; 
+    int resultat = a * b;
+    printf("Test");
     printf("%d\n",a);
     printf("%d\n",b);
     printf("Resultat de la multiplication %d\n",resultat);
