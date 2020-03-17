@@ -11,6 +11,7 @@ void handler(int signal){
 }
 
 int main(){
+  srand(time(NULL));
   struct sigaction action;
   int i;
   action.sa_handler = handler;
@@ -20,12 +21,16 @@ int main(){
   sigaction(SIGQUIT,&action,NULL);
   sigaction(SIGTERM, &action, NULL);
 
+  int a = rand();
+  printf("%d\n",a);
+  int b = rand();
+  printf("%d\n",b);
   while(1)
 
-    for(i = 0; i < 10; i++){
-      printf("a x b\n");
+    //for(i = 0; i < 10; i++){
+      //printf("%d\n", a);
       //scanf("%d", score);
-    }
+    //}
 
   return 0;
 }
