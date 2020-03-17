@@ -38,5 +38,6 @@ int main(){
     if(input == resultat){
         score = score + 1;
     }
+    pause();
   }return 0;
 }
