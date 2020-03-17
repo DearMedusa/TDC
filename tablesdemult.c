@@ -24,8 +24,7 @@ int main(){
 
     for(i = 0; i < 10; i++){
       printf("a x b\n");
-      scanf();
-      if (correcte alors) score + 1 = score;
+      //scanf("%d", score);
     }
 
   return 0;
