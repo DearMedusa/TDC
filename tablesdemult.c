@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <signal.h>
 #include <time.h>
-
+int score;
 void handler(int signal){
   printf("Le signal %d a bien été reçu\n", signal);
   printf("Score: %d\n", score);
@@ -12,7 +12,7 @@ void handler(int signal){
 int main(){
   srand(time(NULL));
   struct sigaction action;
-  int score = 0;
+  score = 0;
   int a;
   int b;
   action.sa_handler = handler;
