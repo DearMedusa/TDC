@@ -14,7 +14,6 @@ void handler(int signal){
 int main(){
   srand(time(NULL));
   struct sigaction action;
-  int i;
   int a;
   int b;
   action.sa_handler = handler;
@@ -25,7 +24,7 @@ int main(){
   sigaction(SIGTERM, &action, NULL);
   pause();
   
-  while(1)
+  while(1){
 
     a = rand();
     b = rand();
@@ -35,5 +34,5 @@ int main(){
     printf("%d\n",b);
     printf("Resultat de la multiplication %d\n",resultat);
 
-  return 0;
+  }return 0;
 }
