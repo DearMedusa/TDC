@@ -23,7 +23,7 @@ int main(){
   sigaction(SIGINT,&action,NULL);
   sigaction(SIGQUIT,&action,NULL);
   sigaction(SIGTERM, &action, NULL);
-
+  pause();
   
   while(1)
 
